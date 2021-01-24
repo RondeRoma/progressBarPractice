@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Progress Bar</title>   
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <div class="container">
       <div class="stepProgressBar">
         <div class="step">
           <h2 class="stepText">ШАГ 1</h2>
-          <p class="stepValue">1</p>
+          <p class="stepValue completed">1</p>
         </div>
         <div class="step">
           <h2 class="stepText">ШАГ 2</h2>
@@ -28,7 +29,7 @@
       <div class="main">
         <h3 class="content">Текущий Шаг</h3>
         <div class="btnWrapper">
-          <button type="button" class="prevBtn">Previous</button>
+          <button type="button" class="prevBtn" disabled>Previous</button>
           <button type="button" class="nextBtn">Next</button>
           <button type="button" class="finishBtn">Finish</button>
         </div>

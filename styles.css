@@ -1,0 +1,73 @@
+body {
+    background-blend-mode: screen;
+	background:
+		linear-gradient(#238cee, transparent) fixed,
+		linear-gradient(90deg, #238fb9, transparent) fixed,
+		linear-gradient(-90deg, #FFE32C, transparent) fixed;
+}
+button {
+    padding: 10px;
+    border: 1px solid #FFE32C;
+    transition: background-color 250ms;
+}
+
+button:hover {
+    background-color: #238fb9;
+    color: #FFE32C;
+    cursor: pointer;
+}
+
+button:disabled:hover {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.stepProgressBar {
+    display: flex;
+    width: 450px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.step {
+    text-align: center;
+}
+
+.stepText {
+color: darkblue;
+}
+
+.stepValue {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FFE32C;
+    border-radius: 50%;
+
+    font-weight: bold;
+    line-height: 1.2;
+
+    transition:  background-color 250ms;
+}
+
+.completed {
+    background-color: #FFE32C;
+    color: #238fb9;
+}
+
+.stepValue.completed::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: -70px;
+
+    width: 60px;
+    height: 2px;
+    background-color: darkblue;
+}
