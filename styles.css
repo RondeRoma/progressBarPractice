@@ -9,6 +9,7 @@ button {
     padding: 10px;
     border: 1px solid #FFE32C;
     transition: background-color 250ms;
+    border-radius: 10%;
 }
 
 button:hover {
